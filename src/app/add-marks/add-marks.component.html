@@ -1,0 +1,15 @@
+<div class="text-center mt-4">
+  <form [formGroup]="getData" (ngSubmit)="onSubmit(getData.value)" class="form-signin border rounded">
+      <h1 class="h3 mb-3 font-weight-normal">Marksheet</h1>
+      <div class="form-group">
+          <!-- <input type="text" ngModel formControlName="firstname" placeholder="First name" class="form-control"> -->
+
+          <input type="text" class="form-control mb-2" ngModel placeholder="Enter name" formControlName="firstname" required autofocus>
+
+          <input type="text" id="inputSubject" class="form-control mb-2" ngModel placeholder="Enter Ionic Marks " formControlName="ionic" required autofocus>
+          <input type="text" id="inputSubject" class="form-control mb-2" ngModel placeholder="Enter BigData Marks " formControlName="bigdata" required autofocus>
+          <input type="text" id="inputSubject" class="form-control mb-2" ngModel placeholder="Enter ML Marks " formControlName="ml" required autofocus>
+          <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+  </form>
+</div>
